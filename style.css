@@ -1919,14 +1919,15 @@ p.info {
 .search_button,
 .shopping_cart {
   display: inline-block;
-  margin-left: 10px;
-    margin-top: 30px;
+  margin-left: 20px;
+   
     
 }
 .main_nav li {
   display: inline-block;
   position: relative;
   padding-top: 20px;
+  left:130px;
   
 }
 .main_nav li:not(:last-child) {
@@ -1935,7 +1936,8 @@ p.info {
 .main_nav li a {
   font-size: 30px;
   font-weight: 600;
-  color: #384158;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1d1d1d;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -2768,7 +2770,7 @@ left:50px !important
     transform: rotate(30deg);
   }
   .milestone_counter {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 0.75;
     color: #14bdee !important;
