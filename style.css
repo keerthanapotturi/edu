@@ -524,9 +524,13 @@ p{
     order: 2;
     display: flex;
 }
-.logo{
+.logo1{
     order: 1;
     font-size: 2.3rem;
+}
+.logo1 .img{
+ height: 90px;
+ width:60px;
 }
 
 .menu-items li{
@@ -560,6 +564,8 @@ p{
         display: block;
         position: relative;
         height: 64px;
+        right: 20px;
+        
     }
 
     .navbar-container input[type="checkbox"]{
@@ -616,6 +622,8 @@ p{
         max-width: 300px;
         transform: translate(-150%);
         display: flex;
+        position: relative;
+        left: -10px;
         flex-direction: column;
         margin-left: -40px;
         padding-left: 40px;
@@ -628,17 +636,18 @@ p{
         margin-bottom: 1.8rem;
         font-size: 1.1rem;
         font-weight: 500;
+        width: 300px;
     }
 
-    .logo{
+    .logo1{
         position: absolute;
-        top: 10px;
+       
         right: 15px;
-        
+       
     }
-    .logo .img{
+     .logo1 img{
       height: 90px;
-       width: 90px;
+      width: 90px;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
