@@ -528,9 +528,10 @@ p{
     order: 1;
     font-size: 2.3rem;
 }
-.logo1 .img{
- height: 90px;
- width:60px;
+.logo1 img{
+ height: 60px;
+ width:90px;
+ 
 }
 
 .menu-items li{
