@@ -527,10 +527,11 @@ p{
 .logo1{
     order: 1;
     font-size: 2.3rem;
+    margin-top: -25px;
 }
 .logo1 img{
- height: 60px;
- width:90px;
+ height: 90px;
+ width:130px;
  
 }
 
