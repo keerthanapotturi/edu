@@ -4007,7 +4007,7 @@ html {
       font-size:7vh; 
       opacity:0;
       margin-top:27%;
-      margin-left:0%;
+      margin-left:50%;
   }
   
   .modal_section:hover 
@@ -4309,7 +4309,7 @@ html {
       font-size:7vh; 
       opacity:0;
       margin-top:27%;
-      margin-left:0%;
+      margin-left:50%;
   }
   
   .modal_section:hover 
@@ -4605,7 +4605,7 @@ html {
           font-size:7vh; 
           opacity:0;
           margin-top:27%;
-          margin-left:0%;
+          margin-left:50%;
       
       }
       
@@ -4624,7 +4624,7 @@ html {
       .latest_events_head
       {
           margin-top: 70px;
-          color:white;
+          color:black;
           font-weight:600;
           text-align: center;
           font-family: 'Times New Roman', Times, serif;
@@ -4874,7 +4874,7 @@ html {
           font-size:7vh; 
           opacity:0;
           margin-top:31%;
-          margin-left:0%;
+          margin-left:50%;
       
       }
       
@@ -4893,7 +4893,7 @@ html {
       .latest_events_head
       {
           margin-top: 70px;
-          color:white;
+          color:rgb(0, 0, 0);
           font-weight:600;
           text-align: center;
           font-family: 'Times New Roman', Times, serif;
@@ -5186,7 +5186,7 @@ html {
           font-size:7vh; 
           opacity:0;
           margin-top:23%;
-          margin-left:0%;
+          margin-left:50%;
       }
       
       .modal_section:hover 
@@ -5508,6 +5508,41 @@ alert{
 /*tutions*/
 
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #14bdee;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px; /* Adds space between the buttons */
+}
+
+/* Center the buttons vertically within the container */
+.button-container::before {
+  content: "";
+  display: inline-block;
+  height: 10%;
+vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+Center the buttons horizontally within the container 
+.button-container a {
+  display: inline-block;
+  vertical-align: middle;
+} 
+
 
 
 .section_our_solution .row {
@@ -5645,6 +5680,41 @@ alert{
   width: 40px;
   height: 50px;
   object-fit: contain;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #14bdee;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px; /* Adds space between the buttons */
+}
+
+/* Center the buttons vertically within the container */
+
+.button-container::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+/* Center the buttons horizontally within the container */
+.button-container a {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
