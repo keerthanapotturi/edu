@@ -20,7 +20,7 @@ h3,h4,h5 {
 }
 
 p{
-  color: #76777a;
+  color:#000000;
   font-family: "Roboto Slab", serif !important;
 }
 
@@ -746,10 +746,10 @@ body{
 .footer-area {
  margin-top: 30px; 
 padding: 100px 0;
-background: #2749c4;
-background: -moz-linear-gradient(left,  #2749c4 0%, #6085b2 100%);
-background: -webkit-linear-gradient(left,  #2749c4 0%,#6085b2 100%);
-background: linear-gradient(to right,  #2749c4 0%,#6085b2 100%);
+background:#2749c4;
+background: -moz-linear-gradient(left,  #041246 0%, #6085b2 100%);
+background: -webkit-linear-gradient(left,  #092074 0%,#acc8eb 100%);
+background: linear-gradient(to right, #0c216b,#A5D7E8 );
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2',GradientType=1 );
 color:#fff;
 position:relative;
@@ -774,6 +774,7 @@ width: 400px;
 text-transform: capitalize;
 font-size: 22px;
 margin-bottom: 20px;
+color:#0B2447 !important;
 }
 .footer-social a {
 color: #fff;
@@ -5507,6 +5508,9 @@ alert{
 
 /*tutions*/
 
+.imgcont{
+  position: relative;
+}
 
 .button-container {
   display: flex;
@@ -5537,7 +5541,7 @@ vertical-align: middle;
   margin-right: -0.25em;
 }
 
-Center the buttons horizontally within the container 
+/*Center the buttons horizontally within the container*/ 
 .button-container a {
   display: inline-block;
   vertical-align: middle;
@@ -5758,6 +5762,24 @@ Center the buttons horizontally within the container
 
 
 
+.mobile-image {
+  display: none;
+}
+.desktop-image {
+  display:block;
+  width: 100%;
+  height: 100%;;
+}
+@media (max-width: 767px) {
+  .mobile-image {
+    display:block;
+    width: 100%;
+    height: 50%;
+  }
+  .desktop-image {
+    display: none;
+  }
+}
 
 
 
@@ -5882,4 +5904,48 @@ section .section-title {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+.carousel-inner .card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.carousel-inner .card .img-fluid{
+  width:300px;
+  height:300px;
+  object-fit: fill;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.carousel-inner .card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  color: white;
+  transform: rotateY(180deg);
 }
