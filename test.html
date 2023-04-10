@@ -41,7 +41,10 @@
             <meta name="author" content="Pedro Botelho for Codrops">
             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-            
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
             <style>
               
               .image-container,.simage-container {
@@ -190,6 +193,35 @@
 <button class="show-more3">Show More</button>
 </div>
 </div>
+<div class="join-community" style="box-sizing: border-box; font-family: Montserrat,sans-serif; font-style:normal;">
+  <h2 style="color: black; margin-top: 20px;font-family: Montserrat,sans-serif ;font-size: 49px;font-weight: 700;font-style:normal; margin: 20px 20px 30px;text-align: center;text-shadow: 1px 1px 3px #e0d1bc;">
+  <i style="color: black; margin-top: 20px;box-sizing: border-box">Join Our Community  🚀</i></h2>
+  <div class="social-buttons" style="display: flex;flex-wrap: wrap;justify-content: space-between;margin: 48px auto;max-width: 480px;font-family: Montserrat,sans-serif;">
+    <a class="ahref" href=" https://chat.whatsapp.com/BEQtT3Ud2uM32F0ZK8WFv4" target="_blank" style="text-decoration: none;">
+      <div class="Community-div-platform-wa" style="align-items: center;background-color: #0d9f16;border-radius: 5px;display: flex;height: 94px;justify-content: flex-start;margin-bottom: 20px;width: 226px;">
+          <img src="./images/wup.png" class="Community-whatsapp-logo" style="height: 61px;margin-left: 10px;width: 72px;"alt="whatsapp icon">
+        <div class="Community-handlesText" style="font-family: Montserrat,sans-serif;">
+        <span class="Community-handle-heading"style="color: #fff;font-size: 22px;font-weight: 600;text-decoration: none;">Join Us On</span>
+        <span class="Community-handle-platform"style="color: #fff;font-size: 23px;font-weight: 700;margin-top: -5px;text-decoration: none;">Whatsapp</span>
+        </div>
+      </div>
+     </a>
+  <a class="ahref" target="_blank" href="https://discord.gg/2kA86Q8CnU" style="text-decoration: none ;" alt="discord icon">
+      <div class="Community-div-platform-discord" style="align-items: center;
+      background-color: #404eed;
+      border-radius: 5px;
+      display: flex;
+      height: 94px;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      width: 226px;">
+          <img src="./images/diss.png" class="Community-discord-logo" style="vertical-align: middle;height: 62px;margin-left: 10px;width: 80px;" alt="discord icon">
+  <div class="Community-handlesText">
+      <span class="Community-handle-heading" style="color: #fff;font-size: 23px;font-weight: 600;margin-top: 5px;text-decoration: none;">Join Us On</span>
+      <span class="Community-handle-platform" style="color: #fff;font-size: 23px;font-weight: 700;margin-bottom: 5px;margin-top: -5px;text-decoration: none;">Discord</span></div>
+  </div></a>
+   </div>
+  </div>
               <div>
                   <footer class="footer-area">
                       <div class="footer-wave-box">
@@ -291,7 +323,7 @@
                 butt.addEventListener('click', () => {
                   nmShowing += nmToShow;
                   for (let i = 0; i < imag.length; i++) {
-                    if (i < numShowing) {
+                    if (i < nmShowing) {
                       imag[i].style.display = 'block';
                     } else {
                       imag[i].style.display = 'none';
