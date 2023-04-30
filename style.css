@@ -3378,7 +3378,7 @@ left:50px !important
 .join-community .social-buttons {
   max-width: 420px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
   margin-bottom: 0px;
   flex-wrap: wrap;
