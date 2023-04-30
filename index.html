@@ -49,6 +49,88 @@
         margin: 4px 2px;
         cursor: pointer;
       }
+      .butn {
+        position: relative;
+        padding: 10px 50px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #292929;
+        background-color: 	#25D366;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 1s all ease-in-out;
+        overflow: hidden;
+    }
+    #bt {
+        position: relative;
+        padding: 10px 50px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #292929;
+        background-color: #404eed;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 1s all ease-in-out;
+        overflow: hidden;
+    }
+
+    .butn::before {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 400px;
+        
+        top: -370px;
+        left: -120px;
+        border-radius: 45%;
+        transition: 2s all ease-in-out;
+        animation: wave 10s infinite linear;
+    }
+
+    .butn::after {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: #ececec80;
+        top: -360px;
+        left: -125px;
+        border-radius: 45%;
+        transition: 2s all ease-in-out;
+        animation: wave 9s infinite linear;
+    }
+
+    .butn span {
+        position: relative;
+        z-index: 1;
+       
+    }
+
+    .butn:hover {
+        color: #fff;
+    }
+    #bt:hover {
+        color: #fff;
+    }
+
+    .butn:hover::before {
+        top: -450px;
+    }
+
+    .butn:hover::after {
+        top: -440px;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+        
+    }
       .button1 {background-color: #0d9f16;} /* Green */
       .button2 {background-color: #404eed;} /* Blue */
       </style>
@@ -117,15 +199,11 @@
                   <div>
                     <div class="join-community">
                         <div class="social-buttons">
-                            <a class="ahref" href="https://chat.whatsapp.com/DndX5CJ8Yov4F3pj5VzxzX"target="_blank">
-                                                                <div class="Community-div-platform-wa">
-                                                                    <img src="./images/wup.png" class="Community-whatsapp-logo" alt="whatsapp icon">
-                                                                </div>
+                            <a class="butn" href="https://chat.whatsapp.com/DndX5CJ8Yov4F3pj5VzxzX"target="_blank" style="text-decoration:none;">
+                                                                <span>Whatsapp</span>
                                                             </a>
-                                                            <a class="ahref" target="_blank" href="https://discord.gg/2kA86Q8CnU" alt="discord icon">
-                                                                <div class="Community-div-platform-discord">
-                                                                    <img src="./images/diss.png" class="Community-discord-logo" alt="discord icon">
-                                                                </div>
+                                                            <a class="butn" id="bt" target="_blank" href="https://discord.gg/2kA86Q8CnU" alt="discord icon">
+                                                               <span>Discord</span>
                                                             </a>
                                                         </div>
                                                     </div>
