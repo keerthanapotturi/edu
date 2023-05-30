@@ -733,6 +733,7 @@ p{
 
 
 /*css for footer*/
+/*
  *{
   margin:0;
   padding:0;
@@ -826,6 +827,7 @@ overflow:hidden;
 }
 .footer-wave {
 background-image: url('footer-shape.png');         /*style={{backgroundImage: "url('/images/footer-shape.png')" }}*/
+/*
 position: absolute;
 left: 0;
 top: 0;
@@ -907,7 +909,7 @@ background-repeat:repeat-x;
   line-height: 1.85;
   margin-top: 14px;
 }
-
+*/
 /* html for footer*/
 
 /*<!DOCTYPE html>
